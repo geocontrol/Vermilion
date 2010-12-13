@@ -1,0 +1,15 @@
+This is the test ipad/iphone app Vermilion.
+
+It uses PhoneGap as the main framework. 
+
+It aims to use:
+
+* Google Analytics
+* MKStoreKit
+* EasyAPNS - for push notification
+* ShareKit
+
+All implemented as plugins for PhoneGap.
+
+All this is to be considered a test bed, not a production project.
+
