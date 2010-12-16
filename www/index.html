@@ -12,8 +12,10 @@
 	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
 	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
 	-->
+	
 	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript" charset="utf-8" src="pixFileDownload.js"></script>
+	<script type="text/javascript" charset="utf-8">
 
 
 	// If you want to prevent dragging, uncomment this section
@@ -37,6 +39,7 @@
 		//PhoneGap.exec("TestPlug.addThemUp",1,2,3,4);  
 		//PhoneGap.exec("GoogleAnalytics.startTracking");
 		PhoneGap.exec("GoogleAnalytics.trackPage", "StartApp");
+		//fileDownloadMgr.downloadFile("http://www.cnn.com","test.html");
 	}
     
     </script>

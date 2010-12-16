@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C79BF612BA5A3C00BBBE6A /* PixFileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C79BF512BA5A3C00BBBE6A /* PixFileDownload.m */; };
 		01E567FE12B6440600B3D992 /* TestPlug.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E567FD12B6440600B3D992 /* TestPlug.m */; };
 		01E5683C12B6492900B3D992 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E5683B12B6492900B3D992 /* libGoogleAnalytics.a */; };
 		01E5683F12B6495800B3D992 /* GoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E5683E12B6495800B3D992 /* GoogleAnalytics.m */; };
@@ -53,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C79BF412BA5A3C00BBBE6A /* PixFileDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixFileDownload.h; sourceTree = "<group>"; };
+		01C79BF512BA5A3C00BBBE6A /* PixFileDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixFileDownload.m; sourceTree = "<group>"; };
+		01C79C1512BA5B8200BBBE6A /* pixFileDownload.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pixFileDownload.js; sourceTree = "<group>"; };
 		01E567FC12B6440600B3D992 /* TestPlug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPlug.h; sourceTree = "<group>"; };
 		01E567FD12B6440600B3D992 /* TestPlug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPlug.m; sourceTree = "<group>"; };
 		01E5683A12B6492900B3D992 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01C79BF312BA59F600BBBE6A /* PixFileDownload */ = {
+			isa = PBXGroup;
+			children = (
+				01C79BF412BA5A3C00BBBE6A /* PixFileDownload.h */,
+				01C79BF512BA5A3C00BBBE6A /* PixFileDownload.m */,
+			);
+			name = PixFileDownload;
+			sourceTree = "<group>";
+		};
 		01E5683012B6468800B3D992 /* TestPlug */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				301BF56E109A69640062928A /* www */,
+				01C79C1512BA5B8200BBBE6A /* pixFileDownload.js */,
 				301BF52D109A57CC0062928A /* PhoneGapLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
@@ -221,6 +235,7 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				01C79BF312BA59F600BBBE6A /* PixFileDownload */,
 				01E5683912B648FE00B3D992 /* GoogleAnalytics */,
 				01E5683012B6468800B3D992 /* TestPlug */,
 			);
@@ -346,6 +361,7 @@
 				1D3623260D0F684500981E51 /* VermilionAppDelegate.m in Sources */,
 				01E567FE12B6440600B3D992 /* TestPlug.m in Sources */,
 				01E5683F12B6495800B3D992 /* GoogleAnalytics.m in Sources */,
+				01C79BF612BA5A3C00BBBE6A /* PixFileDownload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
