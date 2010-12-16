@@ -8,6 +8,7 @@
 
 #import "VermilionAppDelegate.h"
 #import "PhoneGapViewController.h"
+#import "GANTracker.h"
 
 @implementation VermilionAppDelegate
 
@@ -16,6 +17,27 @@
 	/** If you need to do any extra app-specific initialization, you can do it here
 	 *  -jm
 	 **/
+	
+	// Google Analytics Dispatch period in seconds
+	static const NSInteger kGANDispatchPeriodSec = 600;
+	
+	NSString *googleAnalyticsId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"GoogleAnalyticsId"];
+	[[GANTracker sharedTracker] startTrackerWithAccountID:googleAnalyticsId
+										   dispatchPeriod:kGANDispatchPeriodSec
+												 delegate:nil];
+	
+	NSLog(@"Start Google Analytics");
+	NSLog(@"Google Analytics ID: %@", googleAnalyticsId);
+	
+	/**
+	NSError *error;
+	if (![[GANTracker sharedTracker] trackPageview:@"/StartAp"
+										 withError:&error]) {
+		// Handle error here
+		NSLog(@"error tracking %@",[error description]);
+	}
+	**/
+	
     return [super init];
 }
 

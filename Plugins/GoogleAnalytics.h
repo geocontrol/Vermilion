@@ -10,16 +10,10 @@
 #import "GANTracker.h"
 #import "PhoneGapCommand.h"
 
-//@interface TestPlug : PhoneGapCommand {  
-//}  
-//- (void)addThemUp:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;  
-//@end
-
 @interface GoogleAnalytics : PhoneGapCommand {
-
 	// initialise the tracking object
 }
 
-- (void) trackPage:(NSString *)page;
+- (void) trackPage:(NSMutableArray*)paramArray withDict:(NSMutableDictionary*)options;
 
 @end

@@ -6,30 +6,16 @@
 //  Copyright 2010 springstudios. All rights reserved.
 //
 
-#import "GANTracker.h"
 #import "GoogleAnalytics.h"
 
 
 @implementation GoogleAnalytics
 
-- (id) init 
-{	
-	// Google Analytics Dispatch period in seconds
-	static const NSInteger kGANDispatchPeriodSec = 600;
-	
-	NSString *googleAnalyticsId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"GoogleAnalyticsId"];
-	[[GANTracker sharedTracker] startTrackerWithAccountID:googleAnalyticsId
-										   dispatchPeriod:kGANDispatchPeriodSec
-												 delegate:nil];
-
-	NSLog(@"Start Google Analytics");
-	
-	return [super init];
-}
-
-
-- (void) trackPage:(NSString *)page
+- (void) trackPage:(NSMutableArray*)paramArray withDict:(NSMutableDictionary*)options
 {
+	NSString * page = [paramArray objectAtIndex:0];
+	NSLog(@"Plugin: GoogleAnalytics \nFunction: trackPage \nParameter: %@\n", page);
+	
 	NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
 	NSString *fullpath = [NSString stringWithFormat:@"/v%@/%@",version,page];
 	
